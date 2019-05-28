@@ -1,6 +1,5 @@
 <?php 
 include('common/utils.php');
-//print_r($_SESSION['user']);
 
 $products = getProducts($conn);
 ?>
@@ -41,5 +40,9 @@ $products = getProducts($conn);
 			<?php } ?>
 		</tbody>
 	</table>
+	<br>
+	    <form action="store.php" method="post">
+        <button>ir al store</button>
+    </form>
 </body>
 </html>
